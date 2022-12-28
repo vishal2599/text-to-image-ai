@@ -6,7 +6,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node index",
-    "dev": "nodemon index"
+    "dev": "nodemon index",
+    "sass-dev": "sass --watch --update --style=expanded public/assets/scss:public/assets/css",
+    "sass-prod": "sass --no-source-map --style=compressed public/assets/scss:public/assets/css"
   },
   "keywords": [],
   "author": "",
@@ -17,6 +19,7 @@
     "openai": "^3.1.0"
   },
   "devDependencies": {
-    "nodemon": "^2.0.20"
+    "nodemon": "^2.0.20",
+    "sass": "^1.57.1"
   }
 }

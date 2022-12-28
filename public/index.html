@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OpenAI Image Generator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Eczar&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/loader.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="assets/js/main.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <h2>Open AI Image Generator</h2>
+            </div>
+            <div class="nav-links">
+                <ul>
+                    <li>
+                        <a href="https://beta.openai.com/docs" target="_blank">Open AI docs</a>
+                        <span class="menu-item-bg"></span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="showcase">
+            <form action="" id="image-form">
+                <h1>Describe AI Image</h1>
+                <div class="input-wrap">
+                    <input type="text" id="prompt" placeholder="Enter Text">
+                </div>
+                <div class="input-wrap">
+                    <select name="size" id="size">
+                        <option value="">Image Size</option>
+                        <option value="small">Small</option>
+                        <option value="medium">Medium</option>
+                        <option value="large">Large</option>
+                    </select>
+                </div>
+                <div class="input-wrap">
+                    <select name="size" id="images-number">
+                        <option value="">Number of images</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn">Generate</button>
+            </form>
+        </section>
+        <div class="images-generated">
+            <h2 class="msg"></h2>
+            <div class="images-wrap">
+
+            </div>
+        </div>
+    </main>
+    <div class="loader-wrap">
+        <span class="loader"></span>
+    </div>
+</body>
+</html>

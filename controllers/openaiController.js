@@ -17,10 +17,10 @@ const generateImage = async (req, res) => {
             n: numberOfImages,
             size: imageSize
         });
-        const imageUrl = (await response).data.data[0].url;
+        const imageUrls = (await response).data.data;
         res.status(200).json({
             success: true,
-            data: imageUrl
+            data: imageUrls
         })
     } catch (error) {
         if (error.response) {
